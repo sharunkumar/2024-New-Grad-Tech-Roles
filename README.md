@@ -28,9 +28,6 @@ Use this repo to share and keep track of software, tech, CS, PM, quant jobs for 
 
 ## The List 🚴🏔
 
- - 🛂 - Does NOT offer Sponsorship
- - 🇺🇸 - Requires U.S. Citizenship
- - 🔒 - Job application is closed
 
 [⬇️ Jump to bottom ⬇️](https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles#we-love-our-contributors-%EF%B8%8F%EF%B8%8F)
 <!-- Please leave a one line gap between this and the table TABLE_START (DO NOT CHANGE THIS LINE) -->
