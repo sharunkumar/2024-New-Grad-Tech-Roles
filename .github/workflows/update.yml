@@ -25,7 +25,7 @@ jobs:
 
     - name: Upstream Setup & Merge
       run: |
-        git remote add upstream https://github.com/SimplifyJobs/Summer2024-Internships.git
+        git remote add upstream https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles.git
         git fetch upstream
         git merge --log upstream/dev --strategy=recursive --strategy-option=theirs
 
