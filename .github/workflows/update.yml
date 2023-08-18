@@ -52,15 +52,6 @@ jobs:
         sed -i '/citizens only/Id' README.md
         sed -i '/PhD/Id' README.md
 
-    - name: Update README-Off-Season.md
-      run: |
-        sed -i '/🔒/Id' README-Off-Season.md
-        sed -i '/🇺🇸/Id' README-Off-Season.md
-        sed -i '/🛂/Id' README-Off-Season.md
-        sed -i '/Permanent Resident/Id' README-Off-Season.md
-        sed -i '/citizens only/Id' README-Off-Season.md
-        sed -i '/PhD/Id' README-Off-Season.md
-
     - name: Commit
       run: |
         if [[ `git status --porcelain` ]]; then
@@ -72,11 +63,8 @@ jobs:
     - name: Remove Fluff
       run: |
         sed -i '/Pitt CSC /,/The List/d' README.md
-        sed -i '/Pitt CSC/,/The List/d' README-Off-Season.md
         sed -i '/Back to Top/,/Made with/d' README.md
-        sed -i '/We love/,/Made with/d' README-Off-Season.md
         sed -i '/Jump to bottom/Id' README.md
-        sed -i '/Jump to bottom/Id' README-Off-Season.md
 
     - name: Commit
       run: |
@@ -89,9 +77,7 @@ jobs:
     - name: Fix Links
       run: |
         sed -i 's|pittcsc/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README.md
-        sed -i 's|pittcsc/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README-Off-Season.md
         sed -i 's|SimplifyJobs/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README.md
-        sed -i 's|SimplifyJobs/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README-Off-Season.md
 
     - name: Commit
       run: |
