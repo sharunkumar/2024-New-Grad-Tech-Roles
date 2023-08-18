@@ -62,7 +62,7 @@ jobs:
         
     - name: Remove Fluff
       run: |
-        sed -i '/Pitt CSC /,/The List/d' README.md
+        sed -i '/by Simplify/,/The List/d' README.md
         sed -i '/Back to Top/,/Made with/d' README.md
         sed -i '/Jump to bottom/Id' README.md
 

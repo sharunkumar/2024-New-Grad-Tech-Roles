@@ -28,7 +28,11 @@ Use this repo to share and keep track of software, tech, CS, PM, quant jobs for 
 
 ## The List 🚴🏔
 
+ - 🛂 - Does NOT offer Sponsorship
+ - 🇺🇸 - Requires U.S. Citizenship
+ - 🔒 - Job application is closed
 
+[⬇️ Jump to bottom ⬇️](https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles#we-love-our-contributors-%EF%B8%8F%EF%B8%8F)
 <!-- Please leave a one line gap between this and the table TABLE_START (DO NOT CHANGE THIS LINE) -->
 
 | Company | Role | Location | Application/Link | Date Posted |
@@ -134,3 +138,6 @@ Use this repo to share and keep track of software, tech, CS, PM, quant jobs for 
 | **[Konrad Group](https://simplify.jobs/c/Konrad-Group)** | Software Developer – Entry Level | Vancouver, BC, Canada | <a href="https://boards.greenhouse.io/konradgroup/jobs/5599027003?utm_source=Simplify&ref=Simplify"><img src="https://i.imgur.com/w6lyvuC.png" width="84" alt="Apply"></a> <a href="https://simplify.jobs/p/62e094fd-7b7e-4921-98a4-cfb108e8a7ad?utm_source=GHList"><img src="https://i.imgur.com/aVnQdox.png" width="30" alt="Simplify"></a> | Jul 19 |
 
 <!-- Please leave a one line gap between this and the table TABLE_END (DO NOT CHANGE THIS LINE) -->
+[⬆️ Back to Top ⬆️](https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles#the-list-)
+
+## We love our contributors ❤️❤️
