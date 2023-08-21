@@ -27,7 +27,6 @@
 ## The List 🚴🏔
 
 
-[⬇️ Jump to bottom ⬇️](https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles#we-love-our-contributors-%EF%B8%8F%EF%B8%8F)
 <!-- Please leave a one line gap between this and the table TABLE_START (DO NOT CHANGE THIS LINE) -->
 
 | Company | Role | Location | Application/Link | Date Posted |
