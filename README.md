@@ -1,38 +1,3 @@
-# 2024 New Grad Tech Jobs by Simplify
-
-Use this repo to share and keep track of entry-level software, tech, CS, PM, quant jobs for new graduates.
-
-:warning: Please note that this repository is exclusively for roles in the United States, Canada, or Remote positions :earth_americas:
-
-🙏 **Contribute by submitting an [issue](https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles/issues/new/choose)! See the contribution guidelines [here](./CONTRIBUTING.md)!** 🙏
-
----
-
-### :eyes: Looking for Summer 2024 Tech Internships?
-- 🥳 We're back! Check it out here: [Summer-2024-Tech-Internships](https://github.com/SimplifyJobs/Summer2024-Internships)
-- ✨ Check it out for summer software, tech, CS, PM, and quant internships.
-
----
-<div align="center">
-	<p>
-		<a href="https://simplify.jobs/?utm_source=GHList&utm_medium=banner">
-			<b>Applying to jobs?</b>
-			<br>
-			Autofill all your applications in a single click.
-			<br>
-			<div>
-				<a href="https://simplify.jobs/?utm_source=GHList&utm_medium=banner">
-          <img src="https://res.cloudinary.com/dpeo4xcnc/image/upload/v1636594918/simplify_pittcsc.png" width="450" alt="Simplify">
-        </a>
-			</div>
-		</a>
-		<sub><i>Stop manually re-entering your information. Simplify’s extension helps you autofill job applications on millions of sites.</i></sub>
-	</p>
-</div>
-
----
-
-## The List 🚴🏔
 
 
 <!-- Please leave a one line gap between this and the table TABLE_START (DO NOT CHANGE THIS LINE) -->
