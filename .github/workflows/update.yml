@@ -49,7 +49,7 @@ jobs:
 
     - name: Update README.md
       run: |
-        cp template/README.md .
+        cp .github/template/README.md .
         python .github/scripts/update_readmes.py
 
     - name: Commit
