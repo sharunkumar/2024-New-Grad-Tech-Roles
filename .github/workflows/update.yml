@@ -18,6 +18,11 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.9"
+
     - name: Add Git Commiter Details
       run: |
         git config --global user.email "sharunksplus@gmail.com"
@@ -27,65 +32,33 @@ jobs:
       run: |
         git remote add upstream https://github.com/SimplifyJobs/2024-New-Grad-Tech-Roles.git
         git fetch upstream
-        git merge --log upstream/dev --strategy=recursive --strategy-option=theirs
+        git merge --log upstream/dev --strategy=recursive --strategy-option=ours
 
     # This has to be done first due to permissions reasons
     - name: Move other workflows
       run: |
         find .github/workflows/ -name '*.yml' ! -name 'update.yml' -exec git mv {} .github/archived-workflows/ \;
 
-    - name: Commit and push
+    - name: Commit
       run: |
         if [[ `git status --porcelain` ]]; then
-          git commit -am "move unused workflows" && git push
+          git commit -am "move unused workflows"
         else
           echo "No changes to commit"
         fi
-
 
     - name: Update README.md
       run: |
-        sed -i '/🔒/Id' README.md
-        sed -i '/🇺🇸/Id' README.md
-        sed -i '/🛂/Id' README.md
-        sed -i '/Permanent Resident/Id' README.md
-        sed -i '/citizens only/Id' README.md
-        sed -i '/PhD/Id' README.md
+        cp template/README.md .
+        python .github/scripts/update_readmes.py
 
     - name: Commit
       run: |
         if [[ `git status --porcelain` ]]; then
-          git commit -am "remove closed, no sponsorship entries and citizenship entries"
+          git commit -am "Update README"
         else
           echo "No changes to commit"
-        fi
-        
-    - name: Remove Fluff
-      run: |
-        sed -i '/by Simplify/,/The List/d' README.md
-        sed -i '/Back to Top/,/Made with/d' README.md
-        sed -i '/Jump to bottom/Id' README.md
-
-    - name: Commit
-      run: |
-        if [[ `git status --porcelain` ]]; then
-          git commit -am "remove fluff"
-        else
-          echo "No changes to commit"
-        fi
-        
-    - name: Fix Links
-      run: |
-        sed -i 's|pittcsc/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README.md
-        sed -i 's|SimplifyJobs/Summer2024-Internships/blob/dev/README|sharunkumar/Summer2024-Internships/blob/dev/README|g' README.md
-
-    - name: Commit
-      run: |
-        if [[ `git status --porcelain` ]]; then
-          git commit -am "fixed links"
-        else
-          echo "No changes to commit"
-        fi
+        fi  
         
     - name: Push
       run: git push
