@@ -11,6 +11,8 @@ def main():
 
     util.checkSchema(listings)
     filtered = util.filterListings(listings)
+
+    listings = util.customFilter(listings)
     
     util.sortListings(filtered)
     util.embedTable(filtered)
