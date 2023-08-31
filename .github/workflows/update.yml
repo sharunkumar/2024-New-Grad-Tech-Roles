@@ -39,10 +39,10 @@ jobs:
       run: |
         find .github/workflows/ -name '*.yml' ! -name 'update.yml' -exec git mv {} .github/archived-workflows/ \;
 
-    - name: Commit and push
+    - name: Commit
       run: |
         if [[ `git status --porcelain` ]]; then
-          git commit -am "move unused workflows" && git push
+          git commit -am "move unused workflows"
         else
           echo "No changes to commit"
         fi
@@ -51,6 +51,14 @@ jobs:
       run: |
         cp template/README.md .
         python .github/scripts/update_readmes.py
+
+    - name: Commit
+      run: |
+        if [[ `git status --porcelain` ]]; then
+          git commit -am "Update README"
+        else
+          echo "No changes to commit"
+        fi  
         
     - name: Push
       run: git push
